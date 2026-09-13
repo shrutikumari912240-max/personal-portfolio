@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John Doe | Full Stack Developer Portfolio</title>
+  <meta name="description" content="Personal portfolio of John Doe - Full Stack Developer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== Loader ===== -->
+  <div id="loader">
+    <div class="loader-ring"></div>
+  </div>
+
+  <!-- ===== Navbar ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo">John<span>.Doe</span></a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== Hero / Home Section ===== -->
+  <section id="home" class="hero">
+    <div class="container hero-container">
+      <div class="hero-text">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">John Doe</h1>
+        <h2 class="hero-role">
+          <span id="typedText"></span><span class="cursor">|</span>
+        </h2>
+        <p class="hero-desc">
+          I build fast, accessible and beautiful web applications from the
+          ground up — combining clean design with solid engineering, using the
+          MERN stack and modern JavaScript.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">Hire Me</a>
+          <a href="#projects" class="btn btn-outline">View Work</a>
+          <a href="assets/resume.pdf" class="btn btn-ghost" download>
+            <i class="fa-solid fa-download"></i> Resume
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="mailto:john.doe@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="hero-blob"></div>
+        <div class="hero-avatar">
+          <i class="fa-solid fa-code hero-avatar-icon"></i>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll down">
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ===== About Section ===== -->
+  <section id="about" class="section about">
+    <div class="container">
+      <p class="section-tag">Get To Know</p>
+      <h2 class="section-title">About Me</h2>
+
+      <div class="about-content">
+        <div class="about-image reveal">
+          <div class="about-image-frame">
+            <i class="fa-solid fa-user-tie about-icon"></i>
+          </div>
+          <div class="about-badge">
+            <span>2+</span>
+            <p>Years of<br />Learning</p>
+          </div>
+        </div>
+
+        <div class="about-text reveal">
+          <h3>Aspiring Full Stack Developer</h3>
+          <p>
+            I'm a Computer Science student and full-stack developer intern
+            passionate about turning ideas into real, working products. I enjoy
+            solving problems end-to-end — from designing clean user interfaces
+            to building reliable APIs and structuring databases.
+          </p>
+          <p>
+            Currently, I'm sharpening my skills in the MERN stack (MongoDB,
+            Express.js, React.js, Node.js) while contributing to internship
+            projects and personal builds like this portfolio.
+          </p>
+
+          <div class="about-info-grid">
+            <div class="info-item">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <div>
+                <h4>Education</h4>
+                <p>B.Tech in Computer Science</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-briefcase"></i>
+              <div>
+                <h4>Role</h4>
+                <p>Full Stack Developer Intern</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <h4>Location</h4>
+                <p>Bengaluru, India</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-language"></i>
+              <div>
+                <h4>Languages</h4>
+                <p>English, Hindi</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn-primary">Let's Talk</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills Section ===== -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <p class="section-tag">What I Know</p>
+      <h2 class="section-title">My Skills</h2>
+
+      <div class="skills-grid" id="skillsGrid">
+        <!-- Skill cards injected by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects Section ===== -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <p class="section-tag">My Work</p>
+      <h2 class="section-title">Featured Projects</h2>
+
+      <div class="project-filter" id="projectFilter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web App</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Project cards injected by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Education Section ===== -->
+  <section id="education" class="section education">
+    <div class="container">
+      <p class="section-tag">My Journey</p>
+      <h2 class="section-title">Education & Certifications</h2>
+
+      <div class="timeline" id="timeline">
+        <!-- Timeline items injected by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <p class="section-tag">Get In Touch</p>
+      <h2 class="section-title">Contact Me</h2>
+
+      <div class="contact-content">
+        <div class="contact-info reveal">
+          <h3>Let's build something great together</h3>
+          <p>
+            Have a project in mind, an internship opportunity, or just want to
+            say hi? My inbox is always open. I'll try my best to get back to
+            you within 24 hours!
+          </p>
+
+          <div class="contact-detail">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p>john.doe@example.com</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <p>+91 98765 43210</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <h4>Location</h4>
+              <p>Bengaluru, Karnataka, India</p>
+            </div>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+
+        <form id="contactForm" class="contact-form reveal" novalidate>
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+            <span class="error-msg" id="nameError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required />
+            <span class="error-msg" id="emailError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?" />
+            <span class="error-msg" id="subjectError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+            <span class="error-msg" id="messageError"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <span id="submitText">Send Message</span>
+            <i class="fa-solid fa-spinner fa-spin" id="submitSpinner" style="display:none;"></i>
+          </button>
+
+          <div class="form-status" id="formStatus"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <a href="#home" class="logo">John<span>.Doe</span></a>
+      <p>&copy; <span id="year"></span> John Doe. All rights reserved.</p>
+      <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
